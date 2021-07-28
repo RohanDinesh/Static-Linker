@@ -13,10 +13,10 @@ Static linking is the result of the linker copying all library routines used in 
 
 Design-
 1. Read in the input file: The contents of the input file simulates the actual input to the linker. The first line of the input file has: the number of sections in the program.
-Each section has the following three lines:
-The number of symbols in that section along with the symbols and their relative addresses.
-The number of symbols used in that section along with the symbols.
-The memory addresses in that section have to be adjusted before loading it into the memory.
+Each section has the following three lines:</br>
+     -‣ The number of symbols in that section along with the symbols and their relative addresses.</br>
+     -‣ The number of symbols used in that section along with the symbols.</br>
+     -‣ The memory addresses in that section have to be adjusted before loading it into the memory.</br>
 
  2. First pass: We look at all the symbols defined in each section and add it to the  symbol table(here, an ArrayList simulates the symbol table). We have another ArrayList that stores the relative addresses corresponding to the symbols in the first one. Thus identification of various symbols and creation of the symbol table is done in the first pass.
 
