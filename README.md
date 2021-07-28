@@ -12,16 +12,20 @@ Our project aims at implementing a static linker.
 Static linking is the result of the linker copying all library routines used in the program into the executable image. This may require more disk space and memory than dynamic linking, but is both faster and more portable, since it does not require the presence of the library on the system where it is run.
 
 Design-
-1. Read in the input file: The contents of the input file simulates the actual input to the linker. The first line of the input file has: the number of sections in the program.
+1. Read in the input file: </br>
+The contents of the input file simulates the actual input to the linker. The first line of the input file has: the number of sections in the program.
 Each section has the following three lines:</br>
      -‣ The number of symbols in that section along with the symbols and their relative addresses.</br>
      -‣ The number of symbols used in that section along with the symbols.</br>
      -‣ The memory addresses in that section have to be adjusted before loading it into the memory.</br>
 
- 2. First pass: We look at all the symbols defined in each section and add it to the  symbol table(here, an ArrayList simulates the symbol table). We have another ArrayList that stores the relative addresses corresponding to the symbols in the first one. Thus identification of various symbols and creation of the symbol table is done in the first pass.
+2. First pass: </br>
+We look at all the symbols defined in each section and add it to the  symbol table (here, an ArrayList simulates the symbol table). We have another ArrayList that stores the relative addresses corresponding to the symbols in the first one. Thus identification of various symbols and creation of the symbol table is done in the first pass.
 
-3. Second pass: In the second pass, we store all the symbols used in a particular section in a list along with their addresses. Then, we parse all the memory locations of that particular section. Depending on whether the location is immediate, absolute, relative or external, we modify the addresses and resolve the symbols wherever needed.
+3. Second pass: </br>
+In the second pass, we store all the symbols used in a particular section in a list along with their addresses. Then, we parse all the memory locations of that particular section. Depending on whether the location is immediate, absolute, relative or external, we modify the addresses and resolve the symbols wherever needed.
 
-4. Output: The output files consists of the adjusted memory locations and can be used as an input to the loader.
+4. Output: </br>
+The output files consists of the adjusted memory locations and can be used as an input to the loader.
 
 
