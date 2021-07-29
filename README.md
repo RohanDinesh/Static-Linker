@@ -29,3 +29,8 @@ In the second pass, we store all the symbols used in a particular section in a l
 The output files consists of the adjusted memory locations and can be used as an input to the loader.
 
 
+To run this program:
+```
+> javac Linker.java
+> java Linker input_set_[1-8].txt
+```
