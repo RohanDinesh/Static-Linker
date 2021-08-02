@@ -36,9 +36,9 @@ To run this program:
 ```
 
 Sample: 
-Inputs to the linker:
+Inputs to the linker:</br>
 ![image](https://user-images.githubusercontent.com/66969681/127820846-d78bc429-90a5-47e0-8551-4a3ac05cd58b.png)
 
-Output from the linker:
+Output from the linker:</br>
 ![image](https://user-images.githubusercontent.com/66969681/127820921-d3dd91b3-2a1e-4d72-ae70-9ec47e447bfe.png)
 
