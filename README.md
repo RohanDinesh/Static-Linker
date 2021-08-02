@@ -35,7 +35,7 @@ To run this program:
 > java Linker input_set_[1-8].txt
 ```
 
-Sample: 
+Sample:</br>
 Inputs to the linker:</br>
 ![image](https://user-images.githubusercontent.com/66969681/127820846-d78bc429-90a5-47e0-8551-4a3ac05cd58b.png)
 
