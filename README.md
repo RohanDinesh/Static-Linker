@@ -1,4 +1,4 @@
-# Static-Linker
+
 This project aims at simulating a static linker. </br>
 It simulates a two-pass linker based on file input with definitions, uses, and memory addresses (relative, absolute, immediate, external) -- with error detection.
 We have written this linker using Java. The linker takes in an input file consisting of various sections of a program, reads in all symbols, and creates a complete symbol table in memory in the first pass. In the second pass, it reads in section and relocation information, updates addresses, and writes out a new file.
